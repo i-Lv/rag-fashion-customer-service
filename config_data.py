@@ -15,13 +15,13 @@ collection_name = "rag"
 persist_directory = os.path.join(BASE_DIR, "chroma_db")
 
 # 文本分割器
-chunk_size = 1000
-chunk_overlap = 100
+chunk_size = 500
+chunk_overlap = 50
 separators = ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]
-max_split_char_number = 1000        # 文本分割的阈值
+max_split_char_number = 500         # 文本分割的阈值
 
 # 检索参数
-top_k = 1                           # 检索返回匹配的文档数量
+top_k = 3                           # 检索返回匹配的文档数量
 
 # 模型配置
 embedding_model_name = "text-embedding-v4"
